@@ -19,7 +19,7 @@ import re
 #from luxresidence.mhelpers import extract_from, get_item
 
 class LuxresidenceSpider(neukolln.spiders.NeukollnBaseSpider, scrapy.Spider):
-    name='luxeresidence202009'
+    name='luxeresidence202010'
     allowed_domains = ['lux-residence.com']  # FIXME
 
     # Outputs

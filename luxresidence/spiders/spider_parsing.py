@@ -66,7 +66,7 @@ class LuxresidenceSpider(neukolln.spiders.NeukollnBaseSpider, scrapy.Spider):
 
     def parse(self, response):
         new_liste = []
-        start=list(pd.read_csv("/home/h.mahmoudi/Luxeresidence/Luxeresidence/spiders/outputs/20200629/data.csv")["url"])
+        start=list(pd.read_csv("/home/h.mahmoudi/Luxeresidence/Luxeresidence/spiders/outputs/20201012/data.csv")["url"])
         for url in start:
             new_liste.append("https://www.lux-residence.com/get/offer/fr/"+str(url))
         print("My data :",new_liste)
